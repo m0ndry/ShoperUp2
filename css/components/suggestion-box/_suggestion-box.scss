@@ -4,15 +4,16 @@
     justify-content: space-between;
     margin-bottom: 15px;
     font-size: 12px;
+
+    &h2 {
+        margin: 0;
+        font-size: inherit;
+        color: $color-grey-dark;
+    }
+
+    &a {
+        color: $color-black;
+        font-weight: bold;
+    }
 }
 
-.suggestion-box__header h2 {
-    margin: 0;
-    font-size: inherit;
-    color: #969696;
-}
-
-.suggestion-box__header a {
-    color: #000000;
-    font-weight: bold;
-}
