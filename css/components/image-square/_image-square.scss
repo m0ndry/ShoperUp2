@@ -9,11 +9,11 @@
     overflow: hidden;
 
     &.has-border {
-        border: 1px solid $color-grey-base;
+        border: 1px solid $color-grey;
     }
 
     &.is-active {
-        border: 2px solid $color-newStories;
+        border: 2px solid $color-secondary;
 
         img {
             border: 1px solid $color-white;

@@ -2,32 +2,67 @@
     display: flex;
     align-items: center;
     margin-right: 10px;
-}
 
-.user-details__img {
-    margin-right: 10px;
-}
+    &__img {
+        margin-right: 10px;
+    }
 
-.user-details__content h2,
-.user-details__content h3 {
-    margin: 0 0 3px 0;
-    font-size: 12px;
-    font-weight: bold;
-}
+    &__content {
+        h2, h3 {
+            margin: 0 0 3px 0;
+            font-size: 12px;
+            font-weight: bold;
+        }
 
-.user-details__content p {
-    margin: 0;
-    font-size: 11px;
-    color: #969696;
-}
+        p {
+            margin: 0;
+            font-size: 11px;
+            color: $color-gray--dark;
+        }
+    }
 
-.user-details--big .user-details__content h2,
-.user-details--big .user-details__content h3 {
-    font-size: 13px;
+    &--big {
+        .user-details__content {
+            h2, h3 {
+                font-size: 13px;
+            }
+    
+            p {
+                font-size: 12px;
+            }
+        }
+    }
 }
+// Zostawiam sobie stary zapis poniżej aby widzieć i lepiej zrozumieć różnicę
+// .user-details {
+//     display: flex;
+//     align-items: center;
+//     margin-right: 10px;
+// }
 
-.user-details--big .user-details__content p {
-    font-size: 12px;
-}
+// .user-details__img {
+//     margin-right: 10px;
+// }
 
-//W tym przypadku muszę jeszcze raz oglądnąć nagranie z dzisiejszych zajęć także czekam aż będzie dostępne ;)
+// .user-details__content h2,
+// .user-details__content h3 {
+//     margin: 0 0 3px 0;
+//     font-size: 12px;
+//     font-weight: bold;
+// }
+
+// .user-details__content p {
+//     margin: 0;
+//     font-size: 11px;
+//     color: #969696;
+// }
+
+// .user-details--big .user-details__content h2,
+// .user-details--big .user-details__content h3 {
+//     font-size: 13px;
+// }
+
+// .user-details--big .user-details__content p {
+//     font-size: 12px;
+// }
+
