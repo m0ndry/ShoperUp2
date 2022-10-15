@@ -1,31 +1,69 @@
-.content-wrapper__aside {
-    display: none;
-}
-
-@media screen and (min-width: 800px) {
-    .content-wrapper {
-        display: flex;
-        margin: 0 -15px;
+.content-wrapper {
+    @media screen and (min-width: 800px) {
+      display: flex;
+      margin: 0 -15px;
     }
-
-    .content-wrapper__main,
-    .content-wrapper__aside {
+  
+    &__main,
+    &__aside {
+      @media screen and (min-width: 800px) {
         padding: 0 15px;
+      }
     }
-    
-    .content-wrapper__main {
+  
+    &__main {
+      @media screen and (min-width: 800px) {
         width: 70%;
+      }
     }
+  
+    &__aside {
+      display:none;
 
-    .content-wrapper__aside {
+      @media screen and (min-width: 800px) {
         display: block;
         flex: 1;
+      }
     }
-
-    .content-wrapper__aside-user {
+  
+    &__aside-user {
+      @media screen and (min-width: 800px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 30px;
+      }
     }
-}
+  }
+// Zostawiam sobie stary zapis poniżej aby widzieć i lepiej zrozumieć różnicę
+//   .content-wrapper__aside {
+//     display: none;
+// }
+
+// @media screen and (min-width: 800px) {
+//     .content-wrapper {
+//         display: flex;
+//         margin: 0 -15px;
+//     }
+
+//     .content-wrapper__main,
+//     .content-wrapper__aside {
+//         padding: 0 15px;
+//     }
+    
+//     .content-wrapper__main {
+//         width: 70%;
+//     }
+
+//     .content-wrapper__aside {
+//         display: block;
+//         flex: 1;
+//     }
+
+//     .content-wrapper__aside-user {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         margin-bottom: 30px;
+//     }
+// }
