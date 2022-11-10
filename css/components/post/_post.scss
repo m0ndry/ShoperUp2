@@ -1,7 +1,7 @@
 .post {
     margin-bottom: 20px;
     background-color: $color-white;
-    @include border(1px, solid, $color-grey)
+    @include border(1px, solid, $color-grey);
     // border: 1px solid $color-grey;
     border-radius: 7px;
 
