@@ -319,7 +319,7 @@ html, body {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #F5F4D7;
+  background-image: linear-gradient(#c6e2e9, #a7bed3);
   font-size: 14px;
 }
 
@@ -440,17 +440,26 @@ input:focus {
   padding: 10px 0;
   background-color: #ffffff;
   border-bottom: 1px solid #dbdbdb;
+  box-shadow: 5px 5px 30px #000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .page-header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .page-header__logo {
   flex-shrink: 0;
 }
 .page-header__logo img {
   display: block;
+}
+.page-header__logo:after {
+  content: "BETA";
+  color: #000;
 }
 .page-header__search {
   display: none;
