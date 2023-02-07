@@ -26,9 +26,9 @@ postLoaderButton.addEventListener("click", function() {
 
 //Poddaje się. Z 4 godziny nad tym siedziałem. Nie wychodzi :)
 
-let insideTable = [];
-let tripleTable = [];
-const table = [ "ala ma kota", "test test", "xxx" ];
+// let insideTable = [];
+// let tripleTable = [];
+// const table = [ "ala ma kota", "test test", "xxx" ];
 
 
 // function convertStringToArrays(table, separator)  = nawet nie próbowałem tego zamykać w funkcji ;)
@@ -46,14 +46,14 @@ const table = [ "ala ma kota", "test test", "xxx" ];
 //  }
  
 // Drugi sposób o którym myślałem
- for(let i = 0; i < table.length; i++) {
-    insideTable = table[i].split();
+//  for(let i = 0; i < table.length; i++) {
+//     insideTable = table[i].split();
       
-    }
+//     }
    
-tripleTable = ${insideTable}
+// tripleTable = ${insideTable}
 
-console.log(tripleTable);
+// console.log(tripleTable);
     
  
 
@@ -62,3 +62,21 @@ console.log(tripleTable);
 // convertStringToArrays(table, " "); = nawet nie próbowałem tego zamykać w funkcji ;)
 
 
+// Zadanie 9
+
+const person = {
+    name: "Michał",
+    surname: "Mądrzak",
+    age: 38,
+    favouriteMovies: ["Die Hard", " Die Hard 2", " Die Hard 3"],
+    getFavMovies: function() {
+     return this.favouriteMovies.join();
+    },
+    getFullName:  function() {
+        return `${this.name} ${this.surname}`;
+    },
+    sayHello: function() {
+        console.log(`Hello my name is ${this.getFullName()}. I am ${this.age} years old, and my favorite movies are: ${this.getFavMovies()}.`)
+    }
+}
+person.sayHello();
